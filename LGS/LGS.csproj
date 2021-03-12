@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFB9038F-09C1-4C36-A2A8-66F47CA00756}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LGS</RootNamespace>
+    <AssemblyName>LGS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>darkicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clasa_Intrebari-Limba.cs" />
+    <Compile Include="Clasa_Timp-Muzica-Gen.cs" />
+    <Compile Include="Clasa_TestAcomod-SchimbParola.cs" />
+    <Compile Include="Clasa_Conectare.cs" />
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thief2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thief2_1.Designer.cs">
+      <DependentUpon>Thief2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thief2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thief2_2.Designer.cs">
+      <DependentUpon>Thief2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz1.Designer.cs">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltimaUnderworld1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimaUnderworld1_1.Designer.cs">
+      <DependentUpon>UltimaUnderworld1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltimaUnderworld1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimaUnderworld1_2.Designer.cs">
+      <DependentUpon>UltimaUnderworld1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltimaUnderworld2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimaUnderworld2_1.Designer.cs">
+      <DependentUpon>UltimaUnderworld2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltimaUnderworld2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimaUnderworld2_2.Designer.cs">
+      <DependentUpon>UltimaUnderworld2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemShock1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemShock1_1.Designer.cs">
+      <DependentUpon>SystemShock1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemShock1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemShock1_2.Designer.cs">
+      <DependentUpon>SystemShock1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightUnlimited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightUnlimited.Designer.cs">
+      <DependentUpon>FlightUnlimited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coperta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coperta.Designer.cs">
+      <DependentUpon>Coperta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TerraNova_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TerraNova_1.Designer.cs">
+      <DependentUpon>TerraNova_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TerraNova_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TerraNova_2.Designer.cs">
+      <DependentUpon>TerraNova_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BritishOpenChampGolf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BritishOpenChampGolf.Designer.cs">
+      <DependentUpon>BritishOpenChampGolf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightUnlimited2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightUnlimited2.Designer.cs">
+      <DependentUpon>FlightUnlimited2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joc_Xsi0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc_Xsi0.Designer.cs">
+      <DependentUpon>Joc_Xsi0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchimbLimba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchimbLimba.Designer.cs">
+      <DependentUpon>SchimbLimba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeUltima6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeUltima6.Designer.cs">
+      <DependentUpon>PozeUltima6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeUltima7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeUltima7.Designer.cs">
+      <DependentUpon>PozeUltima7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeWizardry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeWizardry.Designer.cs">
+      <DependentUpon>PozeWizardry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeDungeonMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeDungeonMaster.Designer.cs">
+      <DependentUpon>PozeDungeonMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookingGlass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookingGlass.Designer.cs">
+      <DependentUpon>LookingGlass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeWolfenstein.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeWolfenstein.Designer.cs">
+      <DependentUpon>PozeWolfenstein.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozeSu-27Flanker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozeSu-27Flanker.Designer.cs">
+      <DependentUpon>PozeSu-27Flanker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu_Jocuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu_Jocuri.Designer.cs">
+      <DependentUpon>Meniu_Jocuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreareCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreareCont.Designer.cs">
+      <DependentUpon>CreareCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaMultiAni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaMultiAni.Designer.cs">
+      <DependentUpon>LaMultiAni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperareParola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperareParola.Designer.cs">
+      <DependentUpon>RecuperareParola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchimbParola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchimbParola.Designer.cs">
+      <DependentUpon>SchimbParola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagAdmin.Designer.cs">
+      <DependentUpon>PagAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz_Sett.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz_Sett.Designer.cs">
+      <DependentUpon>Quiz_Sett.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quizzz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quizzz.Designer.cs">
+      <DependentUpon>Quizzz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thief1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thief1_1.Designer.cs">
+      <DependentUpon>Thief1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thief1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thief1_2.Designer.cs">
+      <DependentUpon>Thief1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemShock2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemShock2_1.Designer.cs">
+      <DependentUpon>SystemShock2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemShock2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemShock2_2.Designer.cs">
+      <DependentUpon>SystemShock2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightUnlimited3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightUnlimited3.Designer.cs">
+      <DependentUpon>FlightUnlimited3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thief2_1.resx">
+      <DependentUpon>Thief2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thief2_2.resx">
+      <DependentUpon>Thief2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz1.resx">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltimaUnderworld1_1.resx">
+      <DependentUpon>UltimaUnderworld1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltimaUnderworld1_2.resx">
+      <DependentUpon>UltimaUnderworld1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltimaUnderworld2_1.resx">
+      <DependentUpon>UltimaUnderworld2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltimaUnderworld2_2.resx">
+      <DependentUpon>UltimaUnderworld2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemShock1_1.resx">
+      <DependentUpon>SystemShock1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemShock1_2.resx">
+      <DependentUpon>SystemShock1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightUnlimited.resx">
+      <DependentUpon>FlightUnlimited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coperta.resx">
+      <DependentUpon>Coperta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerraNova_1.resx">
+      <DependentUpon>TerraNova_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerraNova_2.resx">
+      <DependentUpon>TerraNova_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BritishOpenChampGolf.resx">
+      <DependentUpon>BritishOpenChampGolf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightUnlimited2.resx">
+      <DependentUpon>FlightUnlimited2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joc_Xsi0.resx">
+      <DependentUpon>Joc_Xsi0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchimbLimba.resx">
+      <DependentUpon>SchimbLimba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeUltima6.resx">
+      <DependentUpon>PozeUltima6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeUltima7.resx">
+      <DependentUpon>PozeUltima7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeWizardry.resx">
+      <DependentUpon>PozeWizardry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeDungeonMaster.resx">
+      <DependentUpon>PozeDungeonMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookingGlass.resx">
+      <DependentUpon>LookingGlass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeWolfenstein.resx">
+      <DependentUpon>PozeWolfenstein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozeSu-27Flanker.resx">
+      <DependentUpon>PozeSu-27Flanker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu_Jocuri.resx">
+      <DependentUpon>Meniu_Jocuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreareCont.resx">
+      <DependentUpon>CreareCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaMultiAni.resx">
+      <DependentUpon>LaMultiAni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperareParola.resx">
+      <DependentUpon>RecuperareParola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchimbParola.resx">
+      <DependentUpon>SchimbParola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagAdmin.resx">
+      <DependentUpon>PagAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz_Sett.resx">
+      <DependentUpon>Quiz_Sett.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quizzz.resx">
+      <DependentUpon>Quizzz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thief1_1.resx">
+      <DependentUpon>Thief1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thief1_2.resx">
+      <DependentUpon>Thief1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemShock2_1.resx">
+      <DependentUpon>SystemShock2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemShock2_2.resx">
+      <DependentUpon>SystemShock2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightUnlimited3.resx">
+      <DependentUpon>FlightUnlimited3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LGS_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UU1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thief1_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thief1_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asfalt-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LGS1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\062.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_71347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-circle-icon-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-1314461_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LookingGlassStudios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thief1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c60ac771-facc-4aa9-a4bc-e55cc5abc704.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5tPxH1T.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThiefDarkProject05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightarrow22_6843.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b45880ce8f429352465b424a6a3f48229f7552a07c4b35b6b31ffe0182edc2cc_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9660a5c6bdffe18fee348789158df806c6166dc8ee43623f750d2fb9d8b84b51_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05871a4ff7f63f5d648b99239b8e5fa3a41dd09201996f874f616ba3139f625c_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss_e89a6f219265cff4dda4d8865701d9487f2d3ad4.600x338.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EzyxHG7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss_1f5416bc0c287489addef58792fba185fe3d85cc.600x338.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Theif1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\constantine-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shodan_facel_wip7a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sspng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\szkgzn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1aa44cadd9f31e68b013a96bf0486f7d3b99917a57b8262bdffd87110ce20571_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26678e789a4753da916da3c916ce64e7877bc50900354559275f72be70dddce1_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemshock2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\49070430aa72bfd62dfbbe7f95615535d246653fa4b017f563150a7046b2b707_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aedfc07f673c522503ae65e61b9c2de0a44355ba26627b57520d1829684db670_product_card_screenshot_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000000000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0000000000000000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00000000000000001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0000000000000000000000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwa_newlook2_bg-520x245.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uw11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uw111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltimaUnderworldBoxContents.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\341413314.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765634524.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\452532352.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\642333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underworld-exporter-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ultima Underworld II Labyrinth of Worlds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74f9d9e2-d13e-43e7-a742-2c74f0f96dad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uw22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uw122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ultima Underworld 2 - Labyrinth of Worlds_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ultima Underworld 2 - Labyrinth of Worlds_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uw2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-274083.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-shock-logo-520x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nC9nO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System-Shock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Msy9hiC5mwmRnJGKB_jeeA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Ru9zgsTObMNSS1eBAQGYEA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shock14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nC9nO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba72fe009f136b35a9bdd75af701c23bfb8c452661d86b1694924986dac296d3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EwXohMbmfgpklDr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descărcare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r8jueji1jsl80swetsgzota7p-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terra-nova-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155172-flight-unlimited-ii-windows-front-cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\444.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4444.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\szkgzn1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shock2202007-07-262020-46-05-50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-the-dark-project-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23295-thief-the-dark-project-windows-screenshot-tactical-use-of-arrows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="darkicon.ico" />
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

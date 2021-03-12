@@ -1,0 +1,235 @@
+Short description:
+Beginning:
+Developed by: Ghiorghe Bianca-Ioana
+Important games created:
+(Initial logo)
+Change the language
+As Blue Sky Productions:
+As Looking Glass Technologies:
+As Looking Glass Studios:
+Start with the games from the year:
+Sound:
+Introduction and description:
+Other games mentioned:
+Main page
+Gameplay:
+Story:
+Conclusions:
+New details:
+Enemies:
+Description:
+Categories of characters:
+When did Looking Glass Studios was founded?
+What was the first game they produced?
+What was the last game they produced?
+Which is the main genre of the Thief games?
+For which platform have the games been created?
+Where are set the System Shock games?
+Which is the main genre of the Ultima Underworld games?
+In what year did Looking Glass closed its gates?
+PC (computer)
+on a space station
+in a laboratory
+on Mars
+Action
+Check
+Show the correct answers
+End game. Result:
+It's the turn of the player:
+The player with X won!
+The player with 0 won!
+Nobody won.
+Game over. No changes can be made.
+In order to register, please insert:
+Password:
+*Create a new account.
+The main benefit of registering is that your data will be saved.
+Access
+Invalid email!
+Incorrect password!
+Authentication error!
+Menu
+Tic-Tac-Toe
+Exit
+Missions:
+Quiz
+Level design:
+Please check the box in order to create a new account.
+Please complete all required fields.
+Proces finalizat cu succes.
+Process successfully completed.
+Add
+Birthday:
+*Required fields.
+I give my consent to processing of my personal data.
+Password:*
+Surname and name:*
+(DD/MM/YYYY)
+Gender:*
+Yes
+No
+Female
+Male
+This email already exists.
+Gata
+Done
+Edit
+Surname and name:
+Here exist incomplete fields.
+Password:
+Birthday:
+Log out
+Delete
+Error
+Happy birthday
+Click here
+You can not delete your birthday.
+Attention
+Game Menu
+Data saved
+Security question:*
+Answer:*
+Which was the name of your first pet?
+Which was your teacher's name?
+In which city did you grown up?
+Which is the name of your favorite movie?
+What kind of music do you listen to?
+Which country may you like to visit?
+**I forgot my password.
+In order to take back your password, please insert:
+Security question:
+Answer:
+Wrong answer!
+Wrong answer! You made too many mistakes.
+End game
+To change the password, please rewrite the old one:
+[Email] Player with X:
+[Email] Player with 0:
+Questions
+Month's Summary
+All-time matches
+  (+1) = Win
+    0 = Draw
+  (-1) = Lost
+You can't play with yourself.
+All played matches: 
+Matches
+Last played with: 
+You haven't played this game yet.
+You haven't played this game for > 1 month.
+Note: If you finished, press the Enter key.
+Administration
+Click to go to the main page.
+Click to check the answers.
+Click to correct the wrong answers.
+Click to go back.
+Click to go in front.
+Click to go to the quiz page.
+Informations about the Looking Glass Studios.
+Click to go to the login page.
+Click to go to your profile page.
+Click to go to the page where you can change the language.
+Click to show images with Wizardry.
+Click to show images with Dungeon Master.
+Click to show images with Wolfenstein 3D.
+Click to show images with Ultima VI.
+Click to show images with Ultima VII.
+Click to show images with Su-27 Flanker.
+Click after you selected the language.
+Click to start a new match.
+With
+Without
+Gender:
+Connection:
+Security question:
+Answer:
+None
+Update
+Cancel
+0 - female
+1 - male
+0 - logged out
+1 - logged in
+0 - Which was the name of your first pet?
+1 - Which was your teacher's name?
+2 - In which city did you grown up?
+3 - Which is the name of your favorite movie?
+4 - What kind of music do you listen to?
+5 - Which country may you like to visit?
+0 - member
+Meanings
+No account was found.
+Clear
+Search using this data:
+Surname/Name/Email
+Save the text
+Message
+Text was changed.
+Click to save the changes.
+Click to go to the page where you can see the videos.
+How Thief's stealth system almost 
+didn't work
+Link to the original video [YouTube].
+Looking Glass Studios Retrospective, 
+part I
+part II
+part III
+Videos
+Question
+Congratulations! Do you want to continue the quiz?
+Next
+Total: 
+Correct: 
+Incorrect: 
+Left: 
+Again
+You have 
+ points.
+ point.
+Quiz completed
+Time expired
+It took too much time to complete the quiz.
+I want to complete:
+questions.
+Note: Here can be one to three right options. You need 
+to check all the correct answers in order to get one 
+point.
+Please write the number of questions you want to complete.
+Here are not so many questions in the Database.
+Click to go to the page with Tic-Tac-Toe.
+You need to do the quiz first.
+Are you sure you want to go?
+Unsaved data
+Uncompleted quiz
+Percents
+The data from the last 
+ tests
+Date and hour:
+Score:
+Last three tests:
+You haven't completed any quiz.
+Recapitulate!
+Cancel
+Quiz/Games
+Do you want to complete a quiz? If the answer is "No", you will be send to the game menu.
+Click to go to the quiz page/game menu.
+Accounts Data
+You are going to delete an account from the Database. Are you sure?
+You can't choose a number less or equal to 0.
+The location you mentioned doesn't exist.
+Question:
+Answers:
+Where to find:
+Question in romanian:
+Question in english:
+Answers in romanian:
+Answers in english:
+Correct answer/s:
+A single number with
+one to three parts
+(exp: 12, 1, 123)
+You are going to delete a information from the Database. Are you sure?
+Results
+Delete selected row
+Results from tests:
+Results from Tic-Tac-Toc:

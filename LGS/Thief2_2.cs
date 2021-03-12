@@ -1,0 +1,297 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WMPLib;
+
+namespace LGS
+{
+    public partial class Thief2_2 : Form
+    {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+        public Thief2_2()
+        {
+            InitializeComponent();
+
+            //căutarea și memorarea locului unde se află coloana sonoră corespunzătoare Form-ului curent
+            string url1 = Application.StartupPath;
+            url1 = url1.Substring(0, url1.Length - 10);
+            url1 = url1 + @"\Muzica\07 Thief 2 OST - Ambush.mp3";
+            player.URL = url1;
+            //
+        }
+
+        //trecerea la Form-ul cu întrebări, respectiv oprirea coloanei sonore
+        private void button1_Click(object sender, EventArgs e)
+        {
+            player.controls.stop();
+
+            //în cazul în care utilizatorul nu este conectat și a făcut testul de acomodare o dată, poate alege dacă continuă testarea sau merge la meniul jocurilor
+            if (Clasa_Intrebari.Limba == 1)
+            {
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                {
+                    DialogResult dialog_res = MessageBox.Show(Class3.Titlu[213], Class3.Titlu[177], MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialog_res == DialogResult.Yes)
+                    {
+                        this.Hide();
+                        Quiz1 f12 = new Quiz1();
+                        f12.Show();
+                    }
+                    else if (dialog_res == DialogResult.No)
+                    {
+                        this.Hide();
+                        Meniu_Jocuri f33 = new Meniu_Jocuri();
+                        f33.Show();
+                    }
+                }
+            }
+            else if (Clasa_Intrebari.Limba == 0)
+            {
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                {
+                    DialogResult dialog_res = MessageBox.Show("Dorești să faci un chestionar? În caz contrat, vei fi redirecționat la pagina cu jocuri.", "Întrebare", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialog_res == DialogResult.Yes)
+                    {
+                        this.Hide();
+                        Form41 f41 = new Form41();
+                        f41.Show();
+                    }
+                    else if (dialog_res == DialogResult.No)
+                    {
+                        this.Hide();
+                        Meniu_Jocuri f33 = new Meniu_Jocuri();
+                        f33.Show();
+                    }
+                }
+            }
+            //
+
+            //alege dacă testul de acomodare a fost făcut sau nu și procedează în consecință
+            if (Class3.Test_acomodare == false)
+            {
+                this.Hide();
+                Quiz1 f12 = new Quiz1();
+                f12.Show();
+            }
+            else if (Class3.Test_acomodare == true && Clasa_Conectare.conectat != "")
+            {
+                this.Hide();
+                Form41 f41 = new Form41();
+                f41.Show();
+            }
+        }
+        //
+
+        //trecerea la Form-ul precedent, respectiv oprirea coloanei sonore
+        private void button3_Click(object sender, EventArgs e)
+        {
+            player.controls.stop();
+            this.Hide();
+            Form10 f10 = new Form10();
+            f10.Show();
+        }
+        //
+
+        //închiderea aplicației
+        private void Form11_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        //
+
+        string text = Application.StartupPath;
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+            //stabilirea limbii pentru acest Form și înlocuirea cu textul tradus
+            if (Clasa_Intrebari.Limba == 1)
+            {
+                //găsirea fișierului de tip .txt, unde se află secvențele de text în engleză
+                text = text.Substring(0, text.Length - 10);
+                text = text + @"\texte_EN\t22.txt";
+                string text1 = System.IO.File.ReadAllText(text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t23.txt";
+                string text2 = System.IO.File.ReadAllText(text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t24.txt";
+                string text3 = System.IO.File.ReadAllText(text);
+                //
+
+                richTextBox1.Text = text1;
+                richTextBox3.Text = text2;
+                richTextBox2.Text = text3;
+                label1.Text = Class3.Titlu[14];
+                label3.Text = Class3.Titlu[53];
+                label2.Text = Class3.Titlu[16];
+                button4.Text = Class3.Titlu[164];
+
+                //verifică dacă utilizatorul nelogat a făcut testul de acomodare
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                    button1.Text = Class3.Titlu[212];
+                else button1.Text = Class3.Titlu[54];
+                //
+            }
+            else if (Clasa_Intrebari.Limba == 0)
+            {
+                //găsirea fișierului de tip .txt, unde se află secvențele de text în română
+                text = text.Substring(0, text.Length - 10);
+                text = text + @"\texte_RO\t22.txt";
+                string text1 = System.IO.File.ReadAllText(text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t23.txt";
+                string text2 = System.IO.File.ReadAllText(text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t24.txt";
+                string text3 = System.IO.File.ReadAllText(text);
+                //
+
+                richTextBox1.Text = text1;
+                richTextBox3.Text = text2;
+                richTextBox2.Text = text3;
+
+                //verifică dacă utilizatorul nelogat a făcut testul de acomodare
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                    button1.Text = "Chestionar/Jocuri";
+                //
+            }
+            //
+
+            //pornirea, respectiv oprirea muzicii în funcție de setarea sonorului din cuprins
+            if (Class2.Muzica == 0)
+                player.controls.play();
+            else if (Class2.Muzica == 1)
+                player.controls.stop();
+            //
+
+            //stabilește dacă utilizatorul poate edita textul
+            if (Clasa_Conectare.Status == 1 || Clasa_Conectare.Status == 2)
+            {
+                richTextBox1.ReadOnly = false;
+                richTextBox3.ReadOnly = false;
+                richTextBox2.ReadOnly = false;
+            }
+            else
+            {
+                richTextBox1.ReadOnly = true;
+                richTextBox3.ReadOnly = true;
+                richTextBox2.ReadOnly = true;
+            }
+            //
+
+            button4.Visible = false;
+        }
+
+        //informații suplimentare legate de butoane
+        ToolTip tip = new ToolTip();
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            if (Clasa_Intrebari.Limba == 0)
+            {
+                tip.Show("Apasă pentru a te duce înapoi.", button3);
+            }
+            else if (Clasa_Intrebari.Limba == 1)
+            {
+                tip.Show(Class3.Titlu[124], button3);
+            }
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            if (Clasa_Intrebari.Limba == 0)
+            {
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                    tip.Show("Apasă pentru a te duce la chestionar/meniul cu jocuri.", button1);
+                else
+                    tip.Show("Apasă pentru a te duce la chestionar.", button1);
+            }
+            else if (Clasa_Intrebari.Limba == 1)
+            {
+                if (Class3.Test_acomodare == true && Clasa_Conectare.conectat == "")
+                    tip.Show(Class3.Titlu[214], button1);
+                else
+                    tip.Show(Class3.Titlu[126], button1);
+            }
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            if (Clasa_Intrebari.Limba == 0)
+            {
+                tip.Show("Apasă pentru a salva modificările.", button4);
+            }
+            else if (Clasa_Intrebari.Limba == 1)
+            {
+                tip.Show(Class3.Titlu[167], button4);
+            }
+        }
+        //
+
+        //salvează modificările
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Clasa_Intrebari.Limba == 1)
+            {
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t22.txt";
+                System.IO.File.WriteAllText(text, richTextBox1.Text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t23.txt";
+                System.IO.File.WriteAllText(text, richTextBox3.Text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t24.txt";
+                System.IO.File.WriteAllText(text, richTextBox2.Text);
+
+                MessageBox.Show(Class3.Titlu[166], Class3.Titlu[165], MessageBoxButtons.OK, MessageBoxIcon.Information);
+                button4.Visible = false;
+            }
+            else if (Clasa_Intrebari.Limba == 0)
+            {
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t22.txt";
+                System.IO.File.WriteAllText(text, richTextBox1.Text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t23.txt";
+                System.IO.File.WriteAllText(text, richTextBox3.Text);
+
+                text = text.Substring(0, text.Length - 7);
+                text = text + @"t24.txt";
+                System.IO.File.WriteAllText(text, richTextBox2.Text);
+
+                MessageBox.Show("Textul a fost salvat.", "Mesaj", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                button4.Visible = false;
+            }
+        }
+        //
+
+        //când textul se modifică, butonul de salvare devine utilizabil
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            button4.Visible = true;
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            button4.Visible = true;
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            button4.Visible = true;
+        }
+        //
+    }
+}

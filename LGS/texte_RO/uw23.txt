@@ -1,0 +1,3 @@
+Ultima Underworld II este construit folosind acelaşi motor grafic ca primul titlu, dar actualizat cu câteva îmbunătăţiri. Fereastra jocului este acum mai mare, efectele de sunet sunt puse în aplicare, iar grupurile de butoane sunt mai uşor de folosit. Portretele oamenilor arată mult mai bine şi sunt afişate la rezoluţie mai mare.
+
+Creaţia celor de la Looking Glass a fost exclusiv produsă pentru calculatoare (PC), neexistând alte portări ale jocului pentru console. Acelaşi sistem de butoane, respectiv acţiuni, se regăseste şi în acest joc dar având un mod de aranjare mai accesibil şi avantajos.

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>British Open Championship Golf este un joc de tip sportiv creat şi publicat de Looking Glass Technologies în anul 1997. Ca simulator al renumitului campionat de golf britanic „The Open Championship”, jocul îi permite jucătorului să încerce numeroase forme de golf, inclusiv stroke-play şi four-ball. Jucătorul poate concura cu şi împotriva unor sportivi renumiți de golf ai erei contemporane, aceştia făcând parte din cluburi sportive precum Royal Troon Golf sau Old Course at St. Andrews. 
+
+British Open Championship Golf a reprezentat un eşec total din punct de vedere economic şi comercial, Looking Glass ajungând să se oprească din a mai publica jocuri concepute de ei. În ciuda acestui fapt, jocul a fost apreciat de către critici, având mai mereu recenzii pozitive. Aceştia au apreciat comentariile lui Jim McKay de-a lungul meciurilor şi grafica, respectiv atmosfera creeată de Looking Glass. La polul opus, ceea ce nu le-a plăcut jurnaliştilor a fost lipsa componentei multiplayer, respectiv funcționalitatea cursului de creare.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAQAEBAQAAAAAAAoAQAARgAAABAQAAAAAAAAaAUAAG4BAAAgIBAAAAAAAOgCAADWBgAAICAAAAAA
+        AACoCAAAvgkAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAACA
+        AAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAA
+        AAAAAAADMAAAAAAAADADAAAAAAADCZAwAAAAAAMBADAAAAMAAwmQMAAwAwADARAwADADAAAwAAAAMAMA
+        AAAAAAAwAzAACQAAAzADMwAJAAAzMAAzMAAAAzMAAAMzMzMzMAAAADMzMzMAAAAAAzMzMAAAAAAAAAAA
+        AAD8f///7Cf//9gT//+QCf//EAj//xAI//8QCP//GAj//xA4//8McP//BGD//4AB///AA///4Af///AP
+        ///4H///KAAAABAAAAAgAAAAAQAIAAAAAABAAQAAAAAAAAAAAAAAAQAAAAAAAP///wD///8A////AJqa
+        mgAGBgYABgYGAAYGBgAGBgYAAAAAAAYGBgAGBgYABgYGAAYGBgAGBgYABgYGAAYGBgAGBgYABgYGAAYG
+        BgAGBgYABgYGAAYGBgAGBgYABgYGAAYGBgAGBgYABgYGAAYHBgAGBgkABgcHAAYGCwAHCQkABwkMAAcH
+        EAAHBxEABwkQAAcHEwAHBxUADAsMAAkJEQAHCRMACQsQAAcLEQAHCRUACQkVAAsOCwAJCxMABwcbAAkL
+        FQALCxUACQsWAAsMEwAJDBUACw4RAAkMGAALCxsACw4WAAwTDAAJCSIACxAVAAsOGAAMEREACw4aAA4T
+        EAAMExUACxAdAAwQHwAMDiIADBEdAA4VFgALCTAAEBgRAA4RIQAOFRsAEBYYAAwTIgALCTgAEBoWABER
+        JwATGhoADhYkABAYIQARGxoAEx0WABMWJgAQGiYAEBgpABYkFgALC04AERsrAAwOSQAWJBsAERsuAAcL
+        UwARHS4AER0wABMhKwAYJx0ACwtcABAQVQAYKSEAEyIwABUiMQALCWcAFSI1ABAOXwATFVIAFSQzABAQ
+        XQAdKyQAGzAdACIhOgAdLiIADgxrABYmNwAWJjoADAt1ABYpOgAWJz0AExZhAB8zJAAODncAHTobABgr
+        PQAYK0EADgyBABgsPwAhOCYAERN1ABYWbQAbLkEAIjwkABouRAAdLkYAEBCIABsxRgAdMUcAGzFJACRC
+        JgAdM0kAGzVHAB01SwAmRCsAITNOACdGJwAmRyYAHTdOACI3TAAfN04ADg6mAClHLgAfOFAAJCZzABga
+        kgAfOlIAK0swACE8UwAnUikAEBGwACQ8VwA6OlMAIT1XAC5QMAAiP1gAJD1cACI/WgAiPV0AFhirAC5S
+        MwBEREYAK1csADFSNwAmQV0AJEJdABAQyQAwVzMAJkRdABERzgAmRGQAM1w1ADNaOAAnR2QANVw8ABER
+        3AA3XzoAJ0trACxJbQAREeYAK0xpACtMcAA3ZzgALlByADxpPwAuU3cAQW1EAC5XegAxWH0AQXVGADVa
+        gQAxWoMAN12DAEZ6SQAxX4YAFRX/AEZ9SQBJfU4AOGKLADhmjgBHiEsAPGeTADpplQBOiVIAUI1SADxu
+        nABOklAAQXKeAEFyoQBEdaYAWJpaAEZ3qABHfKsAR3quAEd/sgBhpmIAYahmAGGpZABMhLoAXbJdAEmG
+        vABMhr4AZK5mAEeJwwBSjcYAZ7prAFWQywBtvm4AV5XSAHDEcwBamNcAc8l1AFqe3ABXnt4AeM18AF2h
+        3wCmprwAeNR8AF+m5gBhqOoAYanrAIPhhABptfwAa7r/AG2+/wBwwf8A////AAYGBgAICAgIIQQIbiEI
+        SAQICAgICAgINiFHr8DMzCE2NggICAgINjYhtMBGSMzAITY2CAgINtghNsxGfX1K4DbYNjYINjbYITbg
+        yyHLauA2Ntg2NjbYNiE24H3LfSHANjbY2DZW2DYIKszMWszMwAg2l9hWfMQ2ISFKNszgijYINu7uZiXY
+        NgghzODgNjYINjbY2FYl5TY2CAgleTYINjbY2DY2NsTYNjYIIZVxNjY2XNg2CAg22O6JNlxfVjbKX9g2
+        NggIftjYl9iI0YneaOc2NggICAg22NjPl/uj2Ng2NggICAgICDY22NjY2Ng2NggICAgICAgINjZcaGg2
+        NggICAgI8k///+AH///AA///gAH//wAA//8AAP//EBD//wAQ//8QIP//DED//wQB//+AAf//gAP//8AH
+        ///gD///8B///ygAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAACA
+        AAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMAAAAAAAAAAAAAAAAAAzAAMAAAAAAAAAAA
+        AAAAADMAEQMAAAAAAAAAAAAAAAMwAAADMAAAAAAAAAAAAAADAJmZADMAAAAAAAAAAAAAMwmQCZAzAAAA
+        AAAAAAAAADMJkAmQAwAAADAAAAMAAAAzCZAJkAMAAAAwAAAzAAAAMwCZmQAzAAAAAwAAMAAAAAMBAAAQ
+        MwAAAAMAADAAAAADABERADAAAAADMAMwAAAAAzAREQMwAAAAAzADMwAAAAAzAAAzMAAAADMwAzMAAAAA
+        AAAzMAAAAAAzMAMzAAAAADMzMAAAAAAAMzADMzAAAAAAAAAAAAAAAzMwADMwAAAAAAAAAAAAAAMzAAAz
+        MwAAAAAJkAAAAAAzMwAAMzMwAAAACZAAAAADMzMAAAMzMwAAAAmQAAAAMzMwAAADMzMwAAAAAAAAAzMz
+        MAAAADMzMzAAAAAAADMzMwAAAAADMzMzAAAAADMzMzAAAAAAADMzMzMzMzMzMzMAAAAAAAADMzMzMzMz
+        MzMwAAAAAAAAADMzMzMzMzMzAAAAAAAAAAAAMzMzMzMzAAAAAAAAAAAAAAADMzMwAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////w///5wHn/84Ac/+cADn/PAAc/jgAHH54AB48eA
+        AePHgAHhh4AB4YeAAfAPwAHwD8AD8AfAAOAH4ADgBwAD4AOAD8AD/n/Agfw/gYD8PwGAfD4BwB54A8AH
+        4APgAAAH8AAAD/gAAB/8AAA//wAAf/+AAf//4Af//////ygAAAAgAAAAQAAAAAEACAAAAAAAgAQAAAAA
+        AAAAAAAAAAEAAAAAAAAAAP8A////AP///wCwsLAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAgAAAAKAAAACAAAAAwAAAAOAAQCBAAAAAoAAAAMAAAC
+        CAAAAgoAAAAOAAAADgACBgIAAAIMAAAAFwAAAg4AAgIOAAACEQACBAwAAAQOAAIGCgAABBMAAgIXAAIG
+        EQAEDAQAAAAfAAIIDgACBhMABAoKAAIGFQAGDAgABAwOAAIIGQAECBsABAYfAAQKGQAGDhEAAgAvAAgT
+        CgAGCh0ABg4XAAgREwAEDB8AAgA5AAgVEQAKCiUADBUVAAYRIQAIEx0AChcVAAwZEQAMESMACBUjAAgT
+        JwARIREAAgJUAAoXKQAEBk4AESEXAAoXLQAAAloAChktAAoZLwAMHSkAEyUZAAICZAAICFwAEycdAAwf
+        LwAOHzEAAgByAA4fNQAIBmgADA5YAA4hMwAICGYAGSkhABcvGQAfHTsAGS0fAAYEdwARIzcAESM7AAQC
+        gwARJzsAESU/AAwRagAbMyEABgaFABk7FwATKT8AEylEAAYEkQATK0EAHTkjAAoMgwAREXkAFy1EAB89
+        IQAVLUgAGS1KAAgImQAXMUoAGTFMABcxTgAhRiMAGTNOABc1TAAZNVAAI0gpAB0zVAAlSiUAI0wjABk3
+        VAAfN1IAGzdUAAYGvgAnTC0AGzlWACEjgQATFaUAGztYAClQLwAdPVoAJVgnAAgKygAhPV4AOztaAB0/
+        XgAtVi8AH0FgACE/ZAAfQWIAHz9mABETxAAtWDMASEhKACleKwAxWDcAI0RmACFGZgAICOkAL14zACNI
+        ZgAKCu8AI0huADNkNQAzYjkAJUxuADVkPQAKCv8AN2g7ACVQdwArTnkACgr/AClSdAApUn0AN3I5AC1W
+        fwA9dEEALVqFAER5SAAtXokAMWCNAESDSgA1YpEAMWKTADdmkwBKiU4AMWiXAA4O/wBKjU4ATo1UADls
+        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
+</value>
+  </data>
+</root>
